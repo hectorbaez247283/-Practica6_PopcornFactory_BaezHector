@@ -1,10 +1,13 @@
 package baez.francisco.popcornfactoryv2
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+
 
 class DetallePelicula : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,4 +20,8 @@ class DetallePelicula : AppCompatActivity() {
             insets
         }
     }
+
+    var iv_imagen: ImageView = findViewById(R.id.iv_pelicula) as ImageView
+    var tv_titulo: TextView = findViewById(R.id.tv_titulo) as TextView
+    var tv_descripcion: TextView = findViewById(R.id.tv_descripcion) as TextView
 }
